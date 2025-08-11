@@ -1,0 +1,9 @@
+[2025-08-11T13:56:11.076Z] [SERVER_START] Listening on port 3000
+[2025-08-11T13:58:12.880Z] [REQUEST_START] Ping to 192.168.1.91:8081 (requestId=1754920692880)
+[2025-08-11T13:58:12.880Z] [REQUEST_PAYLOAD] {"message":"MSG","data":{"command":"Ping","EcrId":"13","requestId":"1754920692880"}}
+[2025-08-11T13:58:12.880Z] [REQUEST_FRAMED] "\u0002\n{\"message\":\"MSG\",\"data\":{\"command\":\"Ping\",\"EcrId\":\"13\",\"requestId\":\"1754920692880\"}}\n\u0003"
+[2025-08-11T13:58:17.884Z] [TIMEOUT] No response within timeout for requestId=1754920692880
+[2025-08-11T13:58:30.854Z] [REQUEST_START] Ping to 192.168.1.91:8081 (requestId=1754920710854)
+[2025-08-11T13:58:30.855Z] [REQUEST_PAYLOAD] {"message":"MSG","data":{"command":"Ping","EcrId":"13","requestId":"1754920710854"}}
+[2025-08-11T13:58:30.855Z] [REQUEST_FRAMED] "\u0002\n{\"message\":\"MSG\",\"data\":{\"command\":\"Ping\",\"EcrId\":\"13\",\"requestId\":\"1754920710854\"}}\n\u0003"
+[2025-08-11T13:58:35.859Z] [TIMEOUT] No response within timeout for requestId=1754920710854

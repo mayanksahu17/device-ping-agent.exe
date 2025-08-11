@@ -1,0 +1,43 @@
+{
+  "name": "terminal-agent",
+  "version": "1.0.0",
+  "description": "Electron app to communicate with Verifone terminals",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "build:win": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^29.1.3",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.1"
+  },
+  "build": {
+    "appId": "com.terminal.agent",
+    "productName": "Terminal Agent",
+    "asar": false,
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "index.html",
+      "package.json",
+      "!node_modules/.bin",
+      "!**/node_modules/*/{test,__tests__}/**"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
