@@ -16,11 +16,15 @@
   "build": {
     "appId": "com.terminal.agent",
     "productName": "Terminal Agent",
-    "asar": false,
+    "asar": true,
+    "asarUnpack": [
+      "server/**"
+    ],
     "files": [
       "main.js",
       "preload.js",
       "renderer/**/*",
+      "server/**/*",
       "index.html",
       "package.json",
       "!node_modules/.bin",
