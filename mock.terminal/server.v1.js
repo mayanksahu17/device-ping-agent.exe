@@ -452,7 +452,7 @@ async function route(sock, obj) {
         case 'TipAdjust':return handleTipAdjust(sock, obj);
         case 'Void':     return handleVoid(sock, obj);
         case 'Refund':   return handleRefund(sock, obj);
-        case 'EOD':
+        case 'EODProcessing': return handleBatchClose(sock, obj)
         case 'BatchClose':
         case 'Batch':    return handleBatchClose(sock, obj);
         default:
