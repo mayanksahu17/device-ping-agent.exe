@@ -1,0 +1,200 @@
+{
+  "transactions": [
+    {
+      "tranNo": "0001",
+      "referenceNumber": "200000000000",
+      "responseId": 200000000915,
+      "approvalCode": "431444",
+      "type": "Sale",
+      "status": "VOIDED",
+      "cardAcquisition": "INSERT",
+      "cardType": "Visa",
+      "maskedPAN": "476173******0010",
+      "amounts": {
+        "baseAmount": "4.00",
+        "tipAmount": "0.00",
+        "taxAmount": "0.00",
+        "cashbackAmount": "0.00",
+        "totalAmount": "4.00",
+        "authorizedAmount": "4.00"
+      },
+      "partialApproval": 0,
+      "declineReason": null,
+      "metadata": {
+        "terminalId": "***605",
+        "merchantId": "*********712",
+        "cardholderName": "TEST CARD",
+        "expiryDate": "12/25"
+      },
+      "id": "TXN00000001",
+      "batchId": null,
+      "createdAt": "2025-08-21T14:23:21.108Z",
+      "updatedAt": "2025-08-21T14:29:51.080Z"
+    },
+    {
+      "tranNo": "0002",
+      "referenceNumber": "200000000001",
+      "responseId": 200000000709,
+      "type": "Void",
+      "status": "SETTLED",
+      "originalTransaction": "TXN00000001",
+      "originalReferenceNumber": "200000000000",
+      "amounts": {
+        "baseAmount": "4.00",
+        "tipAmount": "0.00",
+        "taxAmount": "0.00",
+        "cashbackAmount": "0.00",
+        "totalAmount": "4.00",
+        "authorizedAmount": "4.00"
+      },
+      "maskedPAN": "476173******0010",
+      "cardType": "Visa",
+      "id": "TXN00000002",
+      "batchId": null,
+      "createdAt": "2025-08-21T14:29:51.081Z",
+      "updatedAt": "2025-08-21T14:45:57.254Z"
+    },
+    {
+      "tranNo": "0003",
+      "referenceNumber": "200000000002",
+      "responseId": 200000000253,
+      "approvalCode": "520928",
+      "type": "Sale",
+      "status": "SETTLED",
+      "cardAcquisition": "INSERT",
+      "cardType": "Visa",
+      "maskedPAN": "476173******0010",
+      "amounts": {
+        "baseAmount": "4.00",
+        "tipAmount": "0.00",
+        "taxAmount": "0.00",
+        "cashbackAmount": "0.00",
+        "totalAmount": "4.00",
+        "authorizedAmount": "4.00"
+      },
+      "partialApproval": 0,
+      "declineReason": null,
+      "metadata": {
+        "terminalId": "***605",
+        "merchantId": "*********712",
+        "cardholderName": "TEST CARD",
+        "expiryDate": "12/25"
+      },
+      "id": "TXN00000003",
+      "batchId": null,
+      "createdAt": "2025-08-21T14:33:07.416Z",
+      "updatedAt": "2025-08-21T14:45:57.254Z"
+    },
+    {
+      "tranNo": "0004",
+      "referenceNumber": "200000000003",
+      "responseId": 200000000490,
+      "approvalCode": "200050",
+      "type": "Sale",
+      "status": "SETTLED",
+      "cardAcquisition": "INSERT",
+      "cardType": "Visa",
+      "maskedPAN": "476173******0010",
+      "amounts": {
+        "baseAmount": "4.00",
+        "tipAmount": "0.00",
+        "taxAmount": "0.00",
+        "cashbackAmount": "0.00",
+        "totalAmount": "4.00",
+        "authorizedAmount": "4.00"
+      },
+      "partialApproval": 0,
+      "declineReason": null,
+      "metadata": {
+        "terminalId": "***605",
+        "merchantId": "*********712",
+        "cardholderName": "TEST CARD",
+        "expiryDate": "12/25"
+      },
+      "id": "TXN00000004",
+      "batchId": null,
+      "createdAt": "2025-08-21T14:33:57.494Z",
+      "updatedAt": "2025-08-21T14:45:57.254Z"
+    },
+    {
+      "tranNo": "0005",
+      "referenceNumber": "200000000004",
+      "responseId": 200000000378,
+      "approvalCode": "634693",
+      "type": "Sale",
+      "status": "APPROVED",
+      "cardAcquisition": "INSERT",
+      "cardType": "Visa",
+      "maskedPAN": "476173******0010",
+      "amounts": {
+        "baseAmount": "4.00",
+        "tipAmount": "0.00",
+        "taxAmount": "0.00",
+        "cashbackAmount": "0.00",
+        "totalAmount": "4.00",
+        "authorizedAmount": "4.00"
+      },
+      "partialApproval": 0,
+      "declineReason": null,
+      "metadata": {
+        "terminalId": "***605",
+        "merchantId": "*********712",
+        "cardholderName": "TEST CARD",
+        "expiryDate": "12/25"
+      },
+      "id": "TXN00000005",
+      "batchId": "B0001",
+      "createdAt": "2025-08-30T17:45:39.772Z",
+      "updatedAt": "2025-08-30T17:45:39.772Z"
+    }
+  ],
+  "batches": [
+    {
+      "id": null,
+      "openTime": null,
+      "isOpen": false,
+      "transactions": [
+        "TXN00000001",
+        "TXN00000002",
+        "TXN00000003",
+        "TXN00000004"
+      ],
+      "closeTime": "2025-08-21T14:45:57.255Z",
+      "settlementCount": 3,
+      "totalAmount": 12
+    }
+  ],
+  "counters": {
+    "nextTranNo": 6,
+    "nextBatchNo": 2,
+    "nextRefNo": 200000000005
+  },
+  "currentBatch": {
+    "id": "B0001",
+    "openTime": "2025-08-21T14:45:57.255Z",
+    "isOpen": true,
+    "transactions": [
+      "TXN00000005"
+    ]
+  },
+  "statistics": {
+    "totalSales": 4,
+    "totalRefunds": 0,
+    "totalVoids": 1,
+    "totalAmount": 16,
+    "dailyTotals": {
+      "2025-08-21": {
+        "sales": 3,
+        "refunds": 0,
+        "voids": 1,
+        "amount": 12
+      },
+      "2025-08-30": {
+        "sales": 1,
+        "refunds": 0,
+        "voids": 0,
+        "amount": 4
+      }
+    }
+  }
+}
